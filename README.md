@@ -8,12 +8,12 @@ Write
 `python scraper.py [num_pages?]`
 in the console.
 
-`num_pages` is the amount of pages to scrap, including the landing page. Default is `30`. Each page contains 10 articles.
+`num_pages` is the amount of pages to scrap, including the landing page. Its default value is `30`.
 
-Scrapped articles would then be written to `output.json`.
+Scrapped articles are written to `output.json`.
 
 ## Details
 
-New pages are accessed dynamically via POST requests. This scraper simulates them by providing the same headers and payload that are used when accessing the pages from a web browser. Some of the fields in them used here may be unnecessary.
+NewsMaker implements pagination dynamically via POST requests. This scraper simulates them by providing the same headers and payload that are used when accessing the pages with a web browser. Some of the headers/payload fields used in the script may be unnecessary for the simulation.
 
-To speed up the scraping, each request is done asynchronically.
+To speed up the scraping, each request is done asynchronously.
