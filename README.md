@@ -17,3 +17,7 @@ Scrapped articles are written to `output.json`.
 NewsMaker implements pagination dynamically via POST requests. This scraper simulates them by providing the same headers and payload that are used when accessing the pages with a web browser. Some of the headers/payload fields used in the script may be unnecessary for the simulation.
 
 To speed up the scraping, each request is done asynchronously.
+
+## Dependencies
+
+This script depends on the external library `aiohttp` to execute HTTP requests asynchronously. You can install it via `pip`.
